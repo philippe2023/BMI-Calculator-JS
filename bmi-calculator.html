@@ -19,7 +19,7 @@
                     <span class="fs-4 mx-3 fw-bolder">BMI Calculator</span>
                 </a>
                 </header>
-                <div class="p-5 my-5 bg-light rounded-3 shadow-lg">
+                <div class="p-5 my-4 bg-light rounded-3 shadow-lg">
                     <div class="container-fluid py-5">
                         <h1 class="display-5 fw-bold">Simple BMI Calculator</h1>
                         <p class="col-md-8 fs-4 mt-5">Use this Simple BMI Calculator to check your current Body Mass Index.</p>
@@ -39,18 +39,35 @@
                     </div>
                 </div>
                 <div class="row align-items-md-stretch">
-                    <div class="col-md-6">
+                    <div class="col-md-6 my-2">
                         <div class="h-100 p-5 text-bg-dark rounded-3 shadow-lg">
                             <h2>What is BMI</h2>
                             <p>The body mass index, or BMI for short, is the most common formula for assessing body weight. It results from the ratio of body weight in kilograms and height in meters squared. </p>
-                            <a href="https://www.tk.de/service/app/2002866/bmirechner/bmirechner.app?tkcm=aaus" class="btn btn-outline-light" type="button">Learn More</a>
+                            <a href="https://www.tk.de/service/app/2002866/bmirechner/bmirechner.app?tkcm=aaus" class="btn btn-outline-light mt-3" type="button">Learn More</a>
                         </div>
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-md-6 my-2">
                         <div class="h-100 p-5 bg-light border rounded-3 shadow-lg">
                             <h2>How to calculate BMI?</h2>
                             <p>BMI = body weight : (height)²</p>
-                            <button class="btn btn-outline-secondary" type="button">Example button</button>
+                            <p>BMI can be a screening tool, but it does not diagnose the body fatness or health of an individual.</p>
+                            <!-- Button trigger modal -->
+                            <button type="button" class="btn btn-outline-dark" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                View Classification
+                            </button>
+                            <!-- Modal -->
+                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <!-- <div class="modal-dialog modal-xl">
+                                    <img src="bmi.png" alt="bmi-classification-chart" style="width: 50%;">
+                                </div> -->
+                                <div class="modal-dialog modal-lg">
+                                    <div class="modal-body p-5 bg-white rounded-4">
+                                        <h2 class="fw-bold mb-3">Adult Classification</h2>
+                                        <img src="bmi.png" alt="bmi-classification-chart" style="width: 100%;">
+                                        <button type="button" class="btn btn-lg btn-primary mt-5 w-100" data-bs-dismiss="modal">Great, thanks!</button>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
